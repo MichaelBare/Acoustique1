@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/theme/custom-gc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="ressources/unknown.gif">
+					<h1> <font color="white">Acoustique - partie 1</font></h1>
+				</section>
+				<section>
+					<h3>Dans cette activité, vous aurez une vue globale de ce qu'est physiquement le son, certains moyens de le produire et d'autres moyens de le perçevoir.</h3>
+				</section>
+
+				<section>
+					<hrem> 
+					AVERTISSEMENT !
+					</hrem>
+					<rem>
+						<div align="left">
+						Il vous est vivement conseillé de ne pas mettre le volume sonore de votre ordinateur au maximum. Certains sons diffusés (notamment dans la première vidéo) peuvent être intenses. Il est donc primordial de protéger votre ouïe de sons accidentellement trop forts !
+						</div>
+					</rem>
+				</section>	
+
+				<section>
+					<div class="row no-margin-top">
+						<div class="col-50">
+						<h4> L'onde sonore</h4>
+						<p style="font-size:24px">L'onde sonore est une onde <b>matérielle</b> qui nécessite la présence d'un milieu de propagation matériel : l'air.<p>
+						<p style="font-size:24px" class="fragment" data-fragment-index="1"> Cette onde est une succession de dépressions (couleur bleue) et de compressions (couleur rouge) d'air se propageant à environ 340 m/s à 15° : c'est une onde <b>longitudinale</b>. <p>
+						<p style="font-size:24px" class="fragment" data-fragment-index="2"> L'amplitude de ces variations de pression est estimée à 10<sup>-5</sup> Pa à 10 Pa pour les sons les plus intenses.<p>
+						</div>
+						<div class="col-50 fragment fig-container no-margin-top" data-file="ressources/sonanimé/index.html" class="fragment" data-fragment-index="1"></div>
+					</div>
+				</section>
+
+				<section>
+					<h4>Comment produire un son ?</h4>
+					<div class="row no-margin-top">
+						<div class="col-50">
+							<p> Comme nous venons de le voir, le principe de la production d'un son est de mettre les molécules composant l'air en mouvement longitudinal. Une simple action mécanique permet de produire un son !
+						</div>
+						<div class="col-50">
+							<video src="ressources/marteau.mp4" controls></video>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h4> La voix humaine</h4>
+
+					<div class="row no-margin-top">
+						<div class="col-40">
+							<div  data-svg-fragment="ressources/voix.svg#[*|label=base]" height="100%">
+						  		<a class="fragment" title="[*|label=fragment1]"></a>
+								<a class="fragment" title="[*|label=fragment2]"></a>
+								<a class="fragment" title="[*|label=fragment3]"></a>
+								<a class="fragment" title="[*|label=fragment4]"></a>
+								<a class="fragment" title="[*|label=fragment5]"></a>
+								<a class="fragment" title="[*|label=fragment6]"></a>
+								<a class="fragment" title="[*|label=fragment7]"></a>
+								<a class="fragment" title="[*|label=fragment8]"></a>
+							</div>
+						</div>
+						<div class="col-60">
+						<p style="font-size:32px">La voix est le résultat de l'action combinée de la glotte (ouverture du larynx) qu'entourent les cordes vocales (qui, contrairement à ce que l'on pense, sont des replis élastiques de la muqueuse tapissant le larynx). </p>
+<p style="font-size:32px">L'air expulsé par la glotte fait vibrer les cordes vocales qui sont plus ou moins tendues.</p>
+<p style="font-size:32px">Ces deux « systèmes actifs » transfèrent leurs vibrations aux cavités buccales, nasales et larynx qui forment des cavités résonantes qui ajouteront d'autres fréquences aux fréquences de bases déjà présentes.</p>
+
+						</div>
+					</div>
+					
+				</section>
+				<section>
+					<h4> Le haut parleur</h4>
+
+					<div class="row no-margin-top">
+						<div class="col-50">
+							<image class="fragment" data-fragment-index="1" src="ressources/hautparleur.svg"></image>
+						</div>
+						<div class="col-50">
+						<p style="font-size:32px">Comme vous l'avez vu en cinquième, une bobine conductrice d'électricicté plongée dans le champ magnétique d'une aimant en forme de <q>E</q> est libre de glisser sur son pôle central </p>
+<p style="font-size:32px" class = "fragment" data-fragment-index="1">Si un courant est établi, une force électromagnétique apparaît et fait glisser cette bobine (ici, vers l'arrière).</p>
+<p style="font-size:32px" class = "fragment" data-fragment-index="2">La membrane collée à cette bobine bougera à la même fréquence que le courant la traversant.</p>
+
+						</div>
+					</div>
+					
+				</section>
+				<section>
+					<h4>Comment percevoir un son ?</h4>
+					
+							<p> Passons au principe inverse. Comment transformer un son en signal utilisable et interprétable par un cerveau ou un système électrique ?</p>
+						
+				</section>
+				<section>
+					<h4> L'oreille</h4>
+
+					<div class="row no-margin-top">
+						<div class="col-50">
+							<div data-style="width: 200%; height: 200%" data-svg-fragment="ressources/ear2.svg#[*|label=base]">
+						  		<a class="fragment" data-fragment-index="1" title="[*|label=fragment1]"></a>
+								<a class="fragment" data-fragment-index="2" title="[*|label=fragment2]"></a>
+								<a class="fragment" data-fragment-index="3" title="[*|label=fragment3]"></a>
+								<a class="fragment" data-fragment-index="4" title="[*|label=fragment4]"></a>
+								<a class="fragment" data-fragment-index="6" title="[*|label=fragment5]"></a>
+								<a class="fragment" data-fragment-index="7" title="[*|label=fragment6]"></a>
+								<a class="fragment" data-fragment-index="8" title="[*|label=fragment7]"></a>
+								<a class="fragment" data-fragment-index="5" title="[*|label=fragment8]"></a>
+							</div>
+						</div>
+						<div class="col-50">
+							<p style="font-size:28px" class = "fragment" data-fragment-index="1"><b>L'oreille externe : </b> Les vibrations sonores vont entrer dans le conduit auditif et frapper le tympan, petite membrane élastique de 60 mm².</p>
+							<p style="font-size:28px" class = "fragment" data-fragment-index="3"><b>L'oreille moyenne : </b> Les mouvements du tympan sont transférés à la cochlée par les osselets, véritable chaîne de transmission mécanique. L'équilibre des pressions est assuré par la trompe d'Eustache.</p>
+							<p style="font-size:28px" class = "fragment" data-fragment-index="6">><b>L'oreille interne : </b> Les osselets mettent en mouvement la fenêtre ovale, entrée de la cochlée, tube en spirale empli de liquide et tapissé de vibrisses transfromant le mouvement du liquide en signal électrique convoyé par le nerf cochléaire vers le cerveau.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h4> Le microphone</h4>
+
+					<div class="row no-margin-top">
+						<div class="col-60">
+							<image src="ressources/microphone.svg" data-style="width: 200%; height: 200%" class = "fragment" data-fragment-index="1"></image>
+						</div>
+						<div class="col-40">
+							<p style="font-size:28px" >Le microphone peut être vu comme un haut-parleur fonctionnant à l'envers !</p>
+							<p style="font-size:28px" class = "fragment" data-fragment-index="1">En effet, sa composition est identique mais son principe de fonctionnement repose sur la production de courant électrique induit.</p>
+							<p style="font-size:28px" class = "fragment" data-fragment-index="2">Le son vient faire vibrer la membrane qui entraîne avec elle une bobine conductrice qui va voir le flux magnétique la traversant varier, ce qui va faire apparaître un courant induit (loi de Lenz) qui suivra les variations du son.</p>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<div class="row no-margin-top">
+						<div class="col-50">
+						<h4> L'oscilloscope</h4>
+						<p style="font-size:24px">Il est possible d'étudier plus préciséement les caractéristiques d'un son en <b>visualisant</b> le comportement d'un point de l'onde : celui correspondant à la membrane du récepteur.<p>
+<p style="font-size:24px"> Au laboratoire, c'est un appareil dédié à la tâche qui est utilisé, mais ici, c'est sa version numérique qui vous est proposée. Son but est de transformer tracer une évolution du signal électrique en fonction du temps<p>
+						</div>
+						<div class="col-50 fig-container no-margin-top" data-file="ressources/samples/index.html"></div>
+					</div>
+				
+	
+				</section>
+
+				<section>
+					<h4> Maintenant que vous êtes arrivés au bout de la première partie de l'activité d'acoustique, vous pouvez vous rendre à l'adresse :</h4>
+					<div style="text-align:center">
+					<a href="clm-82529/Acoustique2"><font color="blue">Acoustique - Partie  2</font></a>
+					</div>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.1.7/d3.min.js"></script>
+
+
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				width: "95%",
+				height: "100%",
+				margin: 0,
+				minScale: 1,
+				maxScale: 1,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				viewDistance: 2,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/reveald3/reveald3.js' },
+					{ src: 'plugin/svg-fragments/reveal-svg-fragment.js',
+          condition: function(){
+            return !!document.querySelector( '[data-svg-fragment]' );
+          			}}
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
